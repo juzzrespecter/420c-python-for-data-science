@@ -3,7 +3,7 @@ ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello": "titi!"}
 
-new_values = ["World!", "France!", "Paris!", "42Paris"]
+new_values = ["World!", "Spain!", "Madrid!", "42Madrid"]
 
 # List substitution
 if "tata!" in ft_list:
