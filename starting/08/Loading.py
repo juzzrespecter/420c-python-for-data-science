@@ -11,5 +11,5 @@ def ft_tqdm(lst: range) -> None:
     for i in lst:
         p = get_percentage(n, i)
         progress = get_progress(p)
-        print(f"{p:<3}%|{progress:100}| {i}/{n}", end='\r')
+        print('\r', f"{p:<3}%|{progress:100}| {i}/{n}", end="")
         yield i
