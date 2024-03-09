@@ -3,6 +3,7 @@ from load_image import ft_load
 from sys import stderr
 import matplotlib.pyplot as plt
 
+
 def apply_zoom(file_array: array) -> array:
     """
     Zooms img to raccoon's face.
@@ -28,6 +29,7 @@ def apply_rotate(file_array: array) -> array:
 
 
 def main():
+    """ Zooms, greyscales, rotates an image """
     file = "animal.jpeg"
     file_array = ft_load(file)
     if len(file_array) < 1:
