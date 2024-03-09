@@ -1,19 +1,23 @@
 import numpy as np
 from sys import stderr
 
+
 def validate_arr(lst: list) -> bool:
-    """ 
+    """
     Validate list constrains for slice_me fn.
 
     - lst: 2D list
     """
-
-    return isinstance(lst, list) and all(isinstance(l, list) for l in lst)
+    try:
+        np.array(lst)
+    except ValueError:
+        return False
+    return isinstance(lst, list) and all(isinstance(el, list) for el in lst)
 
 
 def validate_index(i: int, j: int) -> bool:
-    """ 
-    Validate indexes, must be integers 
+    """
+    Validate indexes, must be integers
 
     - i: start index
     - j: end index
@@ -27,8 +31,8 @@ def validate_index(i: int, j: int) -> bool:
 
 
 def slice_me(family: list, start: int, end: int) -> list:
-    """ 
-    Prints shape of a 2D array and slices using provided arguments. 
+    """
+    Prints shape of a 2D array and slices using provided arguments.
     Returns None with invalid input.
 
     - family: 2D array to slice.
