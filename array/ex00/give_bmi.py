@@ -10,7 +10,7 @@ def validate(lst: list) -> bool:
         return False
     return True
 
-
+# validacion rota con none
 def give_bmi(height: list[int | float],
              weight: list[int | float]) -> list[int | float]:
     """ Returns a list of BMI values, empty array in error """

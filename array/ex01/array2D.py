@@ -14,7 +14,7 @@ def validate_arr(lst: list) -> bool:
         return False
     return isinstance(lst, list) and all(isinstance(el, list) for el in lst)
 
-
+# esto esta roto
 def validate_index(i: int, j: int) -> bool:
     """
     Validate indexes, must be integers
