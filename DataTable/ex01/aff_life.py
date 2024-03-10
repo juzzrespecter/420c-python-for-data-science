@@ -28,7 +28,7 @@ def main():
     except KeyboardInterrupt:
         print("Exiting...")
         return 0
-    except KeyError as e:
+    except (KeyError, TypeError) as e:
         print(f'{type(e).__name__} :: {e}')
         return 1
 

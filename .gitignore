@@ -3,3 +3,4 @@ venv
 /**/tester.py
 /**/*.jpeg
 /**/*.jpg
+/**/*.csv
